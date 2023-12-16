@@ -10,7 +10,7 @@ on:
 jobs:
   test:
     name: Test and lint
-    uses: open-sauced/open-sauced/.github/workflows/development.yml@main
+    uses: 6510110274/Lab6/.github/workflows/development.yml@main
 
   docker:
     name: Build container
@@ -69,7 +69,7 @@ jobs:
           node-version: 16
 
       - name: "🔧 install npm@latest"
-        run: npm i -g npm@latest
+        run: npm i
 
       - name: "📦 install dependencies"
         uses: bahmutov/npm-install@v1
